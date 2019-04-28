@@ -1,3 +1,4 @@
+<!--suppress ES6ShorthandObjectProperty -->
 <template>
     <button class="g-button" :class="{[`icon-${iconPosition}`]:true}">
         <svg v-if="icon" class="icon">
@@ -12,7 +13,23 @@
 </template>
 <script>
     export default {
-        props: ['icon', 'iconPosition']
+        // props: ['icon', 'iconPosition']
+        props:{
+            icon:{},
+            iconPosition:{
+                type:String,
+                default:'left',
+                validator(value){
+                    //属性的检查器
+                    // if(value !== 'left' && value !== 'right'){
+                    //     return false
+                    // }else {
+                    //     return  true
+                    // }
+                    return value === 'left' || value === 'right'
+                }
+            }
+        }
     }
 </script>
 <style lang="scss">
