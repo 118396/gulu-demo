@@ -21,7 +21,7 @@
         vertical-align: middle;
         > .g-button{
             border-radius: 0;
-            &:not(:firet-child){
+            &:not(:first-child){
                 margin-left: -1px;
             }
 
