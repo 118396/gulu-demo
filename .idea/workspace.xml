@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="556072a1-45c8-4cb1-92a5-154025014e47" name="默认的" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -29,10 +30,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="59" column="11" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="12" />
+            <state relative-caret-position="452">
+              <caret line="109" column="28" selection-start-line="109" selection-start-column="28" selection-end-line="109" selection-end-column="28" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
+                <element signature="e#360#383#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -148,7 +150,7 @@
       <workItem from="1556381314249" duration="2363000" />
       <workItem from="1556383709601" duration="11425000" />
       <workItem from="1556397933645" duration="23341000" />
-      <workItem from="1556551383041" duration="16992000" />
+      <workItem from="1556551383041" duration="18263000" />
     </task>
     <task id="LOCAL-00001" summary="npm install vue">
       <created>1556382440441</created>
@@ -248,11 +250,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556561313944</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="使用 chai.expect 添加四个测试用例，第五个不会">
+      <created>1556636315266</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1556636315266</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54121000" />
+    <option name="totallyTimeSpent" value="55392000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="547" y="6" width="863" height="749" extended-state="0" />
@@ -299,7 +308,8 @@
     <MESSAGE value="检测子元素是不是 button" />
     <MESSAGE value="第一个元素不需要 margin-left: -1px" />
     <MESSAGE value="删除 red" />
-    <option name="LAST_COMMIT_MESSAGE" value="删除 red" />
+    <MESSAGE value="使用 chai.expect 添加四个测试用例，第五个不会" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用 chai.expect 添加四个测试用例，第五个不会" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -369,10 +379,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="59" column="11" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="12" />
+        <state relative-caret-position="452">
+          <caret line="109" column="28" selection-start-line="109" selection-start-column="28" selection-end-line="109" selection-end-column="28" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#360#383#0" expanded="true" />
           </folding>
         </state>
       </provider>
