@@ -26,20 +26,21 @@ const expect = chai.expect
 // 没有报错就是测试通过
 
 {
+    //测试按钮含有 icon
     const Constructor = Vue.extend(Button)
     const vm = new Constructor({
         propsData:{
             icon:'settings'
         }
     })
-    vm.$mount()
+    vm.$mount()// 将 vm 挂载到内存
     let useElement = vm.$el.querySelector('use')
     let href = useElement.getAttribute('xlink:href')
     expect(href).to.eq('#i-settings')
     vm.$el.remove()
     vm.$destroy()
 }
-
+// 测试loading
 {
     const Constructor = Vue.extend(Button)
     const vm = new Constructor({
