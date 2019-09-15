@@ -1,6 +1,7 @@
 <!--suppress ES6ShorthandObjectProperty -->
 <template>
-    <button class="g-button" :class="{[`icon-${iconPosition}`]:true}"
+    <button class="g-button " 
+      :class="{[`icon-${iconPosition}`]:true}"
     @click="$emit('click')">
 <!--         $emit 触发父组件的自定义事件-->
         <g-icon class="icon" v-if="icon && !loading" :name="icon"></g-icon>
