@@ -7,14 +7,10 @@
 
 ## 开始使用
 
-1. 添加 css 样式
-
-使用本框架前,请在 css 中开启 border-box
+1. 添加 css 样式,使用本框架前,请在 css 中开启 border-box
 
 ```
-*{box-sizing: border-box;}
-*::before{box-sizing: border-box;}
-*::after{box-sizing: border-box;}
+*,*::before,*::after{box-sizing: border-box;}
 ```
 IE 8 及以上浏览器都支持
 
