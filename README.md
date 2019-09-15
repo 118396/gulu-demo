@@ -3,16 +3,55 @@
 [![Build Status](https://www.travis-ci.org/118396/gulu-demo.svg?branch=master)](https://www.travis-ci.org/118396/gulu-demo)
 
 ## 介绍
+这是我在学习 Vue 过程中做的一个 UI 框架，希望对你有用
 
 ## 开始使用
 
-1. 安装
+1. 添加 css 样式
 
 使用本框架前,请在 css 中开启 border-box
 
-``
+```
 *{box-sizing: border-box;}
-``
+*::before{box-sizing: border-box;}
+*::after{box-sizing: border-box;}
+```
+IE 8 及以上浏览器都支持
+
+还需要设置默认颜色等变量（后续会改为sass 变量)
+
+```
+html {
+  --button-height: 32px;
+  --font-size: 13.7px;
+  --button-bg: white;
+  --button-active-bg: #eee;
+  --border-radius: 4px;
+  --color: #333;
+  --border-color: #999;
+  --border-color-hover: #666;
+}
+```
+IE 15 及以上浏览器都支持此样式
+
+2. 安装 gulu
+```
+npm i --save gulu
+```
+
+3. 引入 gulu
+```
+import { Button, ButtonGroup, Icon } from "gulu-wh";
+import "gulu-wh/dist/index.css";
+
+export default {
+  name: "app",
+  components: {
+    "g-button": Button,
+  }
+};
+```
+
 
 ## 文档
 
