@@ -41,7 +41,60 @@
 </head>
 
 <body>
+
     <div id="app">
+        <div style="border :1px solid black">
+            <g-row gutter='20'>
+                <g-col>1</g-col>
+                <g-col>2</g-col>
+            </g-row>
+            <g-row gutter='20'>
+                <g-col>1</g-col>
+                <g-col>2</g-col>
+                <g-col>3</g-col>
+                <g-col>4</g-col>
+            </g-row>
+            <g-row>
+                <g-col span='2'>2</g-col>
+                <g-col span='20' offset="2">10</g-col>
+            </g-row>
+        </div>
+        <!-- <g-row>
+            <g-col>1</g-col>
+            <g-col>2</g-col>
+        </g-row>
+        <g-row>
+            <g-col>1</g-col>
+            <g-col>2</g-col>
+            <g-col>3</g-col>
+        </g-row>
+
+        <g-row>
+            <g-col span='2'>2</g-col>
+            <g-col span='20' offset="2">10</g-col>
+        </g-row>
+        <g-row>
+            <g-col span='2'>1</g-col>
+            <g-col span='22'>11</g-col>
+        </g-row>
+        <g-row>
+            <g-col span='4'>2</g-col>
+            <g-col span='8'>4</g-col>
+            <g-col span='12'>6</g-col>
+        </g-row>
+        <g-row>
+            <g-col span='4'>2</g-col>
+            <g-col span='16' offset='2'>8</g-col>
+            <g-col span='2'>1</g-col>
+        </g-row>
+        <g-row>
+            <g-col span='4'>2</g-col>
+            <g-col span='8'>4</g-col>
+            <g-col span='10' offset="2">5</g-col>
+        </g-row> -->
+
+
+
         <!-- <div class="box">
             <g-input value="张三" disabled></g-input>
             <g-input value="李四" readonly></g-input>
@@ -51,7 +104,7 @@
             <g-input value="赵" error="姓名不能少于两个字"></g-input>
         </div> -->
         <div class="box">
-            <g-input  v-model='message'></g-input>
+            <g-input v-model='message'></g-input>
             <p>{{message}}</p>
             <button @click="message += 2">+2</button>
         </div>
