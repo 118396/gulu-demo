@@ -10,24 +10,24 @@ export default {
     gutter: {
       type: [Number, String]
     },
-    align:{
-      type:String,
-      validator(value){
-        return ['left','right','center'].includes(value)
+    align: {
+      type: String,
+      validator(value) {
+        return ["left", "right", "center"].includes(value);
       }
-    } 
+    }
   },
   computed: {
     rowStyle() {
       return {
         marginLeft: -this.gutter / 2 + "px",
         marginRight: -this.gutter / 2 + "px"
-      }
+      };
     },
-    rowClass(){
-        let {align} = this
-        return [align && `align-${align}`]
-      }
+    rowClass() {
+      let { align } = this;
+      return [align && `align-${align}`];
+    }
   },
   mounted() {
     this.$children.forEach(vm => {
@@ -41,13 +41,13 @@ export default {
   display: flex;
 
   flex-wrap: wrap-reverse;
-   &.align-left{
+  &.align-left {
     justify-content: flex-start;
   }
-   &.align-right{
+  &.align-right {
     justify-content: flex-end;
   }
-   &.align-center{
+  &.align-center {
     justify-content: center;
   }
 }
