@@ -66,13 +66,16 @@
 
 <body>
     <div id="app">
+        <g-tabs>
+            <div>hi</div>
+        </g-tabs>
         <g-tabs :selected.sync="selectedTab" @update:selected="yyy">
             <!-- :selected.sync="selectedTab" 等价于   seleced="selectedTab"    @update:selected="selectedTab = $event"-->
             <g-tabs-head>
                 <template slot="actions">
                     <button>设置</button>
                 </template>
-                <g-tabs-item name="woman" >
+                <g-tabs-item name="woman" disabled>
                     <g-icon name="settings"></g-icon>美女
                 </g-tabs-item>
                 <g-tabs-item name="finance">
