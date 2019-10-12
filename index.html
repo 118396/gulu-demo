@@ -35,29 +35,31 @@
             font-size: var(--font-size);
         }
     </style>
-    <!-- <style>
+    <style>
         .box {
             margin: 20px;
         }
     </style>
-    <style>
+    <!-- <style>
         .demo {
             background: gray;
             border: 1px solid red;
             height: 100px;
             margin-top: 50px;
         }
-    </style>
-    <style>
+    </style> -->
+    <!-- <style>
         .sider {
             background: #333;
             width: 200px;
         }
-        .header{
+
+        .header {
             background: #999;
             height: 100px;
         }
-        .footer{
+
+        .footer {
             background: #ccc;
             height: 50px;
         }
@@ -65,9 +67,22 @@
 </head>
 
 <body>
-    <div id="app">
-        <g-tabs :selected.sync="selectedTab" @update:selected="yyy">
-            <!-- :selected.sync="selectedTab" 等价于   seleced="selectedTab"    @update:selected="selectedTab = $event"-->
+    <div id="app"  style="padding-top:100px; padding-left: 100px; border: 1px solid red ">
+        <g-popover >
+            <template slot="content" >
+                <div>popover 内容</div>
+            </template>
+                <button>点我</button>
+        </g-popover>
+        <g-popover>
+                <template slot="content">
+                    <div>popover 内容</div>
+                </template>
+                    <button>点我</button>
+            </g-popover>
+
+        <!-- <g-tabs :selected.sync="selectedTab" @update:selected="yyy">
+            //  :selected.sync="selectedTab" 等价于   seleced="selectedTab"    @update:selected="selectedTab = $event"
             <g-tabs-head>
                 <template slot="actions">
                     <button>设置</button>
@@ -93,13 +108,12 @@
                     体育相关资讯
                 </g-tabs-pane>
             </g-tabs-body>
-        </g-tabs>
+        </g-tabs> -->
 
 
         <!-- <button @click="showToast1">上</button>
             <button @click="showToast2">中</button>
             <button @click="showToast3">下</button> -->
-
 
 
         <!-- <g-layout style="height:100vh;">
@@ -110,7 +124,6 @@
                 <g-footer>footer</g-footer>
             </g-layout>
         </g-layout> -->
-
 
 
 
@@ -134,7 +147,6 @@
                 <div class="demo"></div>
             </g-col>
         </g-row> -->
-
 
 
         <!-- <div class="box">  
