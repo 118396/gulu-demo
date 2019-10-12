@@ -68,10 +68,3 @@ $disabled-text-color: grey;
   }
 }
 </style>
-
-
-
-
-
-
-

@@ -37,25 +37,23 @@ Vue.component('g-tabs-body', TabsBody)
 Vue.component('g-tabs-item', TabsItem)
 Vue.component('g-tabs-pane', TabsPane)
 Vue.use(plugin)
-
-
 new Vue({
     el: '#app',
     data: {
-        loading1: false,
-        loading2: true,
-        loading3: false,
-        message: 'hi',
-        selectedTab:'sports'
+        // loading1: false,
+        // loading2: true,
+        // loading3: false,
+        // message: 'hi',
+        selectedTab: 'sports'
     },
     created() {
 
     },
     methods: {
-        yyy(data){
+        yyy(data) {
             console.log('yyy')
             console.log(data)
-          },
+        },
         showToast1() {
             this.showToast('top')
         },
